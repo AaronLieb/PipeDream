@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Pipe Dream</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+    integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <div class="container" id="game">
+      <div id="info">
+        <h3 id="score">Score: 0</h3>
+        <h1 id="title">Pipe Dream</h1>
+        <h3 id="time">Time: 0</h3>
+      </div>
+      <div class="hsplit">
+        <div id="queue"></div>
+        <div id="grid"></div>
+        <div id="invisible_queue"></div>
+      </div>
+    </div>
+    <div class="container" id="buttons">
+      <a role="button" id="start_button" href="javascript:startGame()">Start</a>
+    </div>
+  </main>
+</body>
+
+</html>
